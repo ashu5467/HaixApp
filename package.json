@@ -9,10 +9,22 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~3.1.1",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/stack": "^6.3.20",
     "expo": "~50.0.3",
     "expo-status-bar": "~1.11.1",
+    "mime-types": "^2.1.35",
     "react": "18.2.0",
-    "react-native": "0.73.2"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.2",
+    "react-native-mime-types": "^2.4.0",
+    "react-native-plotly": "^6.0.0",
+    "react-native-vector-icons": "^10.0.3",
+    "react-native-web": "~0.19.6",
+    "react-native-webview": "^13.6.4",
+    "react-navigation": "^4.4.4",
+    "react-navigation-stack": "^2.10.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

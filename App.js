@@ -1,20 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React from 'react';
+import { View, StyleSheet, ScrollView } from 'react-native';
+import SocialMediaChart from './SocialMediaChart';
+import SocialMediaLineChart from './SocialMediaLineChart';
+import SocialMedia3DScatterPlot from './SocialMedia3DScatterPlot';
+import SocialMediaPieChart from './SocialMediaPieChart';
+import SocialMediaScatterPlot from './SocialMediaScatterPlot';
+import SocialMediaPercentageBar from './SocialMediaPercentageBar';
+import SocialMediaFollowersCount from './SocialMediaFollowersCount';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <ScrollView contentContainerStyle={styles.scrollViewContent}>
+        <SocialMediaFollowersCount />
+        <SocialMediaPercentageBar />
+        <SocialMediaChart /> 
+        <SocialMediaLineChart />
+        <SocialMedia3DScatterPlot />
+        <SocialMediaPieChart />
+        <SocialMediaScatterPlot />
+      </ScrollView>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+  },
+  scrollViewContent: {
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
   },
 });
+
+export default App;
